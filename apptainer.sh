@@ -8,7 +8,7 @@ TMP_FOLDER=$(mktemp -d -q "$PWD/$TODAY-XXXXXXXX" || exit 1)
 APPTAINER_TMPDIR="$TMP_FOLDER" \
       APPTAINER_CACHEDIR="$TMP_FOLDER" \
       apptainer build r2u.sif \
-      docker://jeksterslab/docker-r2u
+      docker://jeksterslab/r2u
 
 # post TMP ---------------------------------------------------------------------
 rm -rf -- "$TMP_FOLDER"
