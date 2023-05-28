@@ -1,5 +1,5 @@
-jeksterslab/docker-r2u
-======================
+jeksterslab/r2u
+===============
 Ivan Jacob Agaloos Pesigan
 
 <!-- badges: start -->
@@ -14,12 +14,6 @@ Docker and Apptainer/Singularity containers for R projects based on `rocker/r2u`
 
 The `Docker Build and Push` GitHub action builds the Docker container and pushes it to Docker Hub.
 
-To run the Docker container run the following.
-
-```bash
-docker run -ti jeksterslab/docker-r2u
-```
-
 ## Build Apptainer/Singularity Image File
 
 To build the Apptainer/Singularity image file (`r2u.sif`),
@@ -29,4 +23,16 @@ run the following.
 git clone https://github.com/jeksterslab/docker-r2u.git
 cd docker-r2u
 make
+```
+
+## Docker Run
+
+```bash
+docker run -it jeksterslab/r2u
+```
+
+## Apptainer Shell
+
+```bash
+apptainer shell r2u.sif
 ```
