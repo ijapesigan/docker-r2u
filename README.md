@@ -1,5 +1,5 @@
-docker-r2u
-==========
+jeksterslab/docker-r2u
+======================
 Ivan Jacob Agaloos Pesigan
 
 <!-- badges: start -->
