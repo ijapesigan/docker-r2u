@@ -56,6 +56,21 @@ R -e "tinytex::install_tinytex( \
     dir =  '/opt/TinyTeX'       \
 )"
 
+## build details
+echo "$(git ls-remote https://github.com/eddelbuettel/r2u.git master)" > /etc/profile.d/container_init.sh
+awk '{print $1 > "/etc/profile.d/container_init.sh"}' /etc/profile.d/container_init.sh
+CONTAINER_RELEASE=$(cat /etc/profile.d/container_init.sh)
+echo "export CONTAINER_RELEASE=$CONTAINER_RELEASE" > /etc/profile.d/container_init.sh
+CONTAINER_RELEASE_MSG="\"This release is based on the commit $CONTAINER_RELEASE from the master branch of eddelbuettel/r2u.\""
+echo "export CONTAINER_RELEASE_MSG=$CONTAINER_RELEASE_MSG" >> /etc/profile.d/container_init.sh
+mkdir -p /srv/build
+cd /srv/build
+touch CONTAINER_RELEASE_MSG
+touch CONTAINER_RELEASE
+echo "$CONTAINER_RELEASE_MSG" > CONTAINER_RELEASE_MSG
+sed -i s/\"//g CONTAINER_RELEASE_MSG
+echo "$CONTAINER_RELEASE" > CONTAINER_RELEASE
+
 # Clean up
 rm -rf /var/lib/apt/lists/*
 rm -rf /tmp/downloaded_packages
@@ -65,3 +80,5 @@ echo -e "Session information...\n"
 R -q -e "sessionInfo()"
 echo -e "Installed packages...\n"
 R -q -e "unname(installed.packages()[, 1])"
+echo -e "\n$CONTAINER_RELEASE_MSG"
+echo -e "\nBuild done!"
