@@ -15,10 +15,24 @@ function apt_install() {
     fi
 }
 
-apt_install \
-  git       \
-  tmux      \
-  vim
+# personal apt packages
+apt_install        \
+    git            \
+    wget           \
+    parallel       \
+    vim            \
+    nnn            \
+    tmux           \
+    curl           \
+    less           \
+    bat            \
+    rsync          \
+    openssh-server \
+    neofetch
+
+# radian
+apt_install python3-pip
+pip3 install -U radian
 
 # development packages and cran packages
 install2.r --error --skipinstalled -n "$NCPUS" \
