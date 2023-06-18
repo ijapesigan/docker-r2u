@@ -2,7 +2,7 @@
 
 set -e
 
-echo "$(git ls-remote https://github.com/jeksterslab/docker-rocker.git main)" > /etc/profile.d/container_init.sh
+echo "$(git ls-remote https://github.com/jeksterslab/docker-r2u.git main)" > /etc/profile.d/container_init.sh
 awk '{print $1 > "/etc/profile.d/container_init.sh"}' /etc/profile.d/container_init.sh
 CONTAINER_RELEASE=$(cat /etc/profile.d/container_init.sh)
 echo "export CONTAINER_RELEASE=$CONTAINER_RELEASE" > /etc/profile.d/container_init.sh
