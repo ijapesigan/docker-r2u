@@ -41,6 +41,7 @@ install2.r --error --skipinstalled -n "$NCPUS" \
     distro         \
     ggplot2        \
     knitr          \
+    languageserver \
     lintr          \
     magick         \
     microbenchmark \
