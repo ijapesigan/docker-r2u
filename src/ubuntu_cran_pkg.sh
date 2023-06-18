@@ -54,4 +54,4 @@ install2.r --error --skipmissing --skipinstalled -n 1 \
     fst
 
 ## a bridge to far? -- brings in another 60 packages
-install2.r --error --skipinstalled -n 1 tidymodels
+# install2.r --error --skipinstalled -n 1 tidymodels
