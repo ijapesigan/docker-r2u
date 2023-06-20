@@ -18,7 +18,6 @@ apt_install        \
     curl           \
     git            \
     less           \
-    neofetch       \
     nnn            \
     openssh-server \
     parallel       \
@@ -33,3 +32,8 @@ curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/lates
 tar xf lazygit.tar.gz lazygit
 install lazygit /usr/local/bin
 rm -rf lazygit*
+
+# pfetch
+git clone https://github.com/dylanaraps/pfetch.git
+install pfetch/pfetch /usr/local/bin/
+ls -l /usr/local/bin/pfetch
