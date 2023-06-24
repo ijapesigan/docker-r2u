@@ -17,7 +17,8 @@
                 "dracula-theme.theme-dracula"
             ],
             "settings": {
-                "r.rterm.linux": "/usr/local/bin/radian"
+                "r.rterm.linux": "/usr/local/bin/radian",
+                "r.plot.useHttpgd": true
             }
         }
     }
