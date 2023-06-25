@@ -17,7 +17,6 @@ echo "export CONTAINER_RELEASE=$CONTAINER_RELEASE" > /etc/profile.d/container_in
 CONTAINER_RELEASE_MSG="\"This release is based on commit $CONTAINER_RELEASE.\""
 echo "export CONTAINER_RELEASE_MSG=$CONTAINER_RELEASE_MSG" >> /etc/profile.d/container_init.sh
 
-
 {
   echo "export GIT_HUB_USERNAME=$GIT_HUB_USERNAME"
   echo "export GIT_HUB_REPO=$GIT_HUB_REPO"
