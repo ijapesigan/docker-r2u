@@ -45,3 +45,8 @@ curl -Lo quarto.tar.gz "https://github.com/quarto-dev/quarto-cli/releases/downlo
 mkdir -p /usr/local
 tar -zxvf quarto.tar.gz -C /usr/local --strip-components=1
 rm -rf quarto*
+
+# pandoc
+wget https://raw.githubusercontent.com/rocker-org/rocker-versioned2/master/scripts/install_pandoc.sh
+bash install_pandoc.sh
+rm -rf install_pandoc.sh
