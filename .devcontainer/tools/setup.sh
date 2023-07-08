@@ -32,3 +32,10 @@ install2.r --error --skipinstalled -n -1 \
 
 # rProject
 Rscript -e "remotes::install_github('ijapesigan/rProject')"
+
+# tinytex full
+R -e "tinytex::install_tinytex( \
+    bundle = 'TinyTeX-2',         \
+    force = TRUE,               \
+    dir =  '/opt/TinyTeX'       \
+)"
