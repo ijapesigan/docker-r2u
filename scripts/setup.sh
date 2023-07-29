@@ -6,6 +6,7 @@ bash ubuntu_sys_pkg.sh
 bash ubuntu_cran_pkg.sh
 bash github_pkg.sh
 bash tinytex.sh
+bash latexmk.sh
 bash custom.sh
 bash lavaan.sh
 bash openmx_sys.sh
