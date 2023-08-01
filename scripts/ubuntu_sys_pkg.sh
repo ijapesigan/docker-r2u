@@ -65,3 +65,7 @@ apt install gh -y
 # jags
 apt_install        \
     jags
+
+# clang-format
+apt_install        \
+    clang-format
