@@ -35,7 +35,7 @@ The `Docker and Apptainer Build and Push` GitHub actions workflow performs the f
 - Builds the Docker image specified by the `Dockerfile`.
 - Pushes the image to [DockerHub](https://hub.docker.com/repository/docker/ijapesigan/r2u/general) using the tags `latest` and `date and time of build (YEAR-MM-DD-HHMMSSMS)`.
 - Builds the Singularity Image File (SIF) using Apptainer based on the Docker Hub image from the previous step.
-- Creates a GitHub release named `sif-YEAR-MM-DD-HHMMSSMS`. Note that `sif-YEAR-MM-DD-HHMMSSMS.zip` contains the SIF. 
+- Creates a GitHub release named `r2u-YEAR-MM-DD-HHMMSSMS`. Note that `r2u-YEAR-MM-DD-HHMMSSMS.zip` contains the SIF. 
 
 ## Docker Shell
 
@@ -45,8 +45,8 @@ docker run -it ijapesigan/r2u
 
 ## Apptainer Shell
 
-Download and unzip `sif-YEAR-MM-DD-HHMMSSMS.zip` from the GitHub release to extract `r2u.sif`.
+Download and unzip `r2u-YEAR-MM-DD-HHMMSSMS.zip` from the GitHub release to extract `r2u-YEAR-MM-DD-HHMMSSMS.sif`.
 
 ```bash
-apptainer shell r2u.sif
+apptainer shell r2u-YEAR-MM-DD-HHMMSSMS.sif
 ```
