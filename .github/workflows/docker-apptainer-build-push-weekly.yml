@@ -78,5 +78,5 @@ jobs:
         with:
           body_path: ./release.txt
           files: ./${{ secrets.DOCKER_HUB_CONTAINER }}-${{ env.NOW }}.zip
-          name: sif-${{ env.NOW }}
+          name: ${{ secrets.DOCKER_HUB_CONTAINER }}-${{ env.NOW }}
           tag_name: ${{ env.NOW }}
