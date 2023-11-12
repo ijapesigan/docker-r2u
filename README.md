@@ -1,19 +1,19 @@
 ijapesigan/r2u
 ================
 Ivan Jacob Agaloos Pesigan
-2023-11-10
+2023-11-12
 
 <!-- README.md is generated from .setup/readme/README.Rmd. Please edit that file -->
 <!-- badges: start -->
 
 [![Make
 Project](https://github.com/ijapesigan/docker-r2u/actions/workflows/make.yml/badge.svg)](https://github.com/ijapesigan/docker-r2u/actions/workflows/make.yml)
-[![Docker and Apptainer Build and
-Push](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-apptainer-build-push.yml/badge.svg)](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-apptainer-build-push.yml)
 [![Docker and Apptainer Build and Push
-(Weekly)](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-apptainer-build-push-weekly.yml/badge.svg)](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-apptainer-build-push-weekly.yml)
-[![Docker Build and Push (Daily at
-00:00:00)](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-build-push-daily-rocker.yml/badge.svg)](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-build-push-daily-rocker.yml)
+\[amd64\]](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-apptainer-build-push-amd64.yml/badge.svg)](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-apptainer-build-push-amd64.yml)
+[![Docker and Apptainer Build and Push \[amd64\]
+(Weekly)](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-apptainer-build-push-weekly-amd64.yml/badge.svg)](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-apptainer-build-push-weekly-amd64.yml)
+[![Docker Build and Push \[amd64\]
+(Daily)](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-build-push-daily-amd64.yml/badge.svg)](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-build-push-daily-amd64.yml)
 [![Shell
 Check](https://github.com/ijapesigan/docker-r2u/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/ijapesigan/docker-r2u/actions/workflows/shellcheck.yml)
 <!-- badges: end -->
