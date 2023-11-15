@@ -10,6 +10,8 @@ bash custom.sh
 bash lavaan.sh
 bash openmx_sys.sh
 bash openmx.sh
+bash metasem.sh
+bash symsem.sh
 bash dynr_sys.sh
 bash dynr.sh
 bash mpdemo.sh
