@@ -2,7 +2,7 @@
 
 set -e
 
-## lavaan dependencies
+# lavaan dependencies
 install2.r --error --skipinstalled -n -1 \
     MASS     \
     mnormt   \
@@ -10,7 +10,7 @@ install2.r --error --skipinstalled -n -1 \
     numDeriv \
     quadprog
 
-## lavaan
+# lavaan
 install2.r --error --skipinstalled -n -1 \
     lavaan
 
