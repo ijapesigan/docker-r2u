@@ -24,6 +24,9 @@ function apt_install() {
 #    libarmadillo-dev \
 #    libeigen3-dev
 
+apt_install          \
+    cmake
+
 # curl
 apt-get install -y   \
     libcurl4-openssl-dev
