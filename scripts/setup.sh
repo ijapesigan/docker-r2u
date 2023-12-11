@@ -15,6 +15,7 @@ bash metasem.sh
 bash symsem.sh
 bash semlbci.sh
 bash semmcci.sh
+bash longmi.sh
 bash dynr_sys.sh
 bash dynr.sh
 bash mpdemo.sh
