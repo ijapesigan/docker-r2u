@@ -59,7 +59,8 @@ install2.r --error --skipinstalled -n -1 \
     betaDelta      \
     betaSandwich   \
     betaNB         \
-    betaMC
+    betaMC         \
+    simStateSpace
 
 # vscode project dependencies
 install2.r --error --skipinstalled -n -1 \
