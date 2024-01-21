@@ -5,7 +5,6 @@ set -e
 bash ubuntu_sys_pkg.sh
 bash ubuntu_cran_pkg.sh
 bash rproject.sh
-bash github_pkg.sh
 bash tinytex.sh
 bash custom.sh
 bash lavaan.sh
@@ -18,5 +17,8 @@ bash semmcci.sh
 bash longmi.sh
 bash dynr_sys.sh
 bash dynr.sh
+bash simstatespace.sh
 bash mpdemo.sh
+bash github_pkg.sh
 bash post.sh
+
