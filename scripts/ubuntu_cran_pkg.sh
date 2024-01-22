@@ -13,6 +13,10 @@ install2.r --error --skipinstalled -n -1 \
     vroom       \
     gert
 
+## DT
+install2.r --error --skipinstalled -n -1 \
+    DT
+
 ## dplyr database backends
 install2.r --error --skipinstalled -n -1 \
     arrow        \
