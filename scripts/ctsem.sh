@@ -1,0 +1,31 @@
+#!/bin/bash
+
+set -e
+
+# ctsem dependencies
+install2.r --error --skipinstalled -n -1 \
+    cOde                                 \
+    data.table                           \
+    Deriv                                \
+    expm                                 \
+    ggplot2                              \
+    MASS                                 \
+    Matrix                               \
+    mize                                 \
+    mvtnorm                              \
+    plyr                                 \
+    RcppParallel                         \
+    rstan                                \
+    rstantools                           \
+    tibble                               \
+    BH                                   \
+    Rcpp                                 \
+    RcppEigen                            \
+    RcppParallel                         \
+    StanHeaders
+
+# ctsem
+install2.r --error --skipinstalled -n -1 \
+    ctsem
+
+echo -e "\nInstall ctsem, done!"
