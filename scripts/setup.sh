@@ -4,8 +4,8 @@ set -e
 
 bash ubuntu_sys_pkg.sh
 bash ubuntu_cran_pkg.sh
-bash rproject.sh
 bash github.sh
+bash rproject.sh
 bash tinytex.sh
 bash custom.sh
 bash lavaan.sh
