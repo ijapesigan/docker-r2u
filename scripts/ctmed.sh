@@ -8,6 +8,6 @@ R -e "remotes::install_github(      \
     )                               \
 )"
 
-R -e "library(CTMed)"
+R -e "library(cTMed)"
 
 echo -e "\nInstall cTMed, done!"
