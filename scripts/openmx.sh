@@ -41,4 +41,6 @@ R -e "                                                 \
   demo('BivariateCorrelation', package = 'OpenMx')     \
 "
 
+R -e "library(OpenMx)"
+
 echo -e "\nInstall OpenMx, done!"
