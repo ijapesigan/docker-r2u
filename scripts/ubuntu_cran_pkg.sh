@@ -52,6 +52,7 @@ install2.r --error --skipinstalled -n -1 \
     ragg           \
     RefManageR     \
     remotes        \
+    rhub           \
     rmarkdown      \
     rprojroot      \
     styler         \
