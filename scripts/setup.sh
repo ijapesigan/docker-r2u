@@ -21,6 +21,8 @@ bash ctsem.sh
 bash simstatespace.sh
 bash dynutils.sh
 bash ctmed.sh
+bash fitdtvarmx.sh
+bash metavar.sh
 bash mpdemo.sh
 bash github_pkg.sh
 bash post.sh
