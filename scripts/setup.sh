@@ -15,6 +15,8 @@ bash symsem.sh
 bash semlbci.sh
 bash semmcci.sh
 bash longmi.sh
+bash mpdemo.sh
+bash mplusautomation.sh
 bash dynr_sys.sh
 bash dynr.sh
 bash ctsem.sh
@@ -24,6 +26,5 @@ bash ctmed.sh
 bash fitdtvarmx.sh
 bash fitctvarmx.sh
 bash metavar.sh
-bash mpdemo.sh
 bash github_pkg.sh
 bash post.sh
