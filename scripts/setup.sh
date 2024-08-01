@@ -26,5 +26,6 @@ bash ctmed.sh
 bash fitdtvarmx.sh
 bash fitctvarmx.sh
 bash metavar.sh
+bash mlvar.sh
 bash github_pkg.sh
 bash post.sh
