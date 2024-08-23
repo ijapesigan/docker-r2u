@@ -1,4 +1,4 @@
-FROM rocker/r2u:22.04
+FROM rocker/r2u:24.04
 
 ADD scripts /usr/src/local/src
 RUN cd /usr/src/local/src     && \
