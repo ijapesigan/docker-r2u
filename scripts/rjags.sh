@@ -6,7 +6,7 @@ set -e
 install2.r --error --skipinstalled -n -1 \
     coda
 
-# mlVAR
+# rjags
 install2.r --error --skipinstalled -n -1 \
     rjags
 

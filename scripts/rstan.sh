@@ -2,9 +2,22 @@
 
 set -e
 
-R -e "                                                                                        \
-  install.packages('rstan', repos = c('https://stan-dev.r-universe.dev', getOption('repos'))) \
-"
+# rstan dependencies
+install2.r --error --skipinstalled -n -1 \
+    StanHeaders                          \
+    BH                                   \
+    inline                               \
+    gridExtra                            \
+    Rcpp                                 \
+    RcppEigen                            \
+    RcppParallel                         \
+    loo                                  \
+    pkgbuild                             \
+    QuickJSR
+
+# rstan
+install2.r --error --skipinstalled -n -1 \
+    rstan
 
 R -e "library(rstan)"
 
