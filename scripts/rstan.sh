@@ -3,7 +3,7 @@
 set -e
 
 R -e "                                                                                        \
-  remove.packages(c('StanHeaders', 'rstan'))                                                  \
+  remove.packages(c('StanHeaders', 'rstan'));                                                 \
   install.packages('rstan', repos = c('https://stan-dev.r-universe.dev', getOption('repos'))) \
 "
 
