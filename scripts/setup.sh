@@ -28,6 +28,7 @@ bash fitctvarmx.sh
 bash metavar.sh
 bash mlvar.sh
 bash rstan.sh
+bash rjags_sys.sh
 bash rjags.sh
 bash brms.sh
 bash github_pkg.sh
