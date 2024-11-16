@@ -17,6 +17,7 @@ bash semmcci.sh
 bash longmi.sh
 bash mpdemo.sh
 bash mplusautomation.sh
+bash semplot.sh
 bash dynr_sys.sh
 bash dynr.sh
 bash ctsem.sh
