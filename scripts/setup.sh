@@ -23,6 +23,7 @@ bash dynr_sys.sh
 bash dynr.sh
 bash ctsem.sh
 bash simstatespace.sh
+bash bootstatespace.sh
 bash dynutils.sh
 bash ctmed.sh
 bash fitdtvarmx.sh
