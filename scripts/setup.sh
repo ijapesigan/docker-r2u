@@ -33,6 +33,7 @@ bash mlvar.sh
 bash rstan.sh
 bash rjags_sys.sh
 bash rjags.sh
+bash r2jags.sh
 bash brms.sh
 bash github_pkg.sh
 bash post.sh
