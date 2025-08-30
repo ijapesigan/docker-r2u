@@ -3,7 +3,7 @@
 set -e
 
 # metaSEM dependencies
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     Matrix   \
     MASS     \
     ellipse  \
@@ -14,7 +14,7 @@ install2.r --error --skipmissing --skipinstalled -n -1 \
 # OpenMx is installed using openmx.sh
 
 # metaSEM
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     metaSEM
 
 R -e "library(metaSEM)"

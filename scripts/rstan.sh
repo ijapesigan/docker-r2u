@@ -3,7 +3,7 @@
 set -e
 
 # rstan dependencies
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     StanHeaders                          \
     BH                                   \
     inline                               \
@@ -16,7 +16,7 @@ install2.r --error --skipmissing --skipinstalled -n -1 \
     QuickJSR
 
 # rstan
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     rstan
 
 R -e "library(rstan)"

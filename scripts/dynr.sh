@@ -3,7 +3,7 @@
 set -e
 
 # dynr dependencies
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
   car            \
   deSolve        \
   devtools       \
@@ -34,7 +34,7 @@ install2.r --error --skipmissing --skipinstalled -n -1 \
   xtable
 
 # autoVAR dependencies
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
   qgraph \
   igraph \
   fclust

@@ -3,7 +3,7 @@
 set -e
 
 # lavaan dependencies
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     MASS     \
     mnormt   \
     pbivnorm \
@@ -11,7 +11,7 @@ install2.r --error --skipmissing --skipinstalled -n -1 \
     quadprog
 
 # lavaan
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     lavaan
 
 R -e "library(lavaan)"

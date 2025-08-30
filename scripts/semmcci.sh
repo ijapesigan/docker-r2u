@@ -3,12 +3,12 @@
 set -e
 
 # semmcci dependencies
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     lavaan \
     mice
 
 # semmcci
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     semmcci
 
 R -e "library(semmcci)"

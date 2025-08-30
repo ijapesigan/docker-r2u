@@ -3,7 +3,7 @@
 set -e
 
 # ctsem dependencies
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     cOde                                 \
     data.table                           \
     Deriv                                \
@@ -25,7 +25,7 @@ install2.r --error --skipmissing --skipinstalled -n -1 \
     StanHeaders
 
 # ctsem
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     ctsem
 
 R -e "library(ctsem)"

@@ -3,7 +3,7 @@
 set -e
 
 # cTMed dependencies
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     Rcpp                                 \
     RcppArmadillo                        \
     numDeriv                             \
@@ -12,7 +12,7 @@ install2.r --error --skipmissing --skipinstalled -n -1 \
     expm
 
 # cTMed
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     cTMed
 
 R -e "library(cTMed)"

@@ -5,7 +5,7 @@
 set -e
 
 ## tidyverse
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     tidyverse   \
     devtools    \
     rmarkdown   \
@@ -14,11 +14,11 @@ install2.r --error --skipmissing --skipinstalled -n -1 \
     gert
 
 ## DT
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     DT
 
 ## dplyr database backends
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     arrow        \
     dbplyr       \
     DBI          \
@@ -32,11 +32,11 @@ install2.r --error --skipmissing --skipinstalled -n -1 \
     fst
 
 ## a bridge to far? -- brings in another 60 packages
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     tidymodels
 
 ## development packages and cran packages
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
     covr           \
     devtools       \
     distro         \
@@ -68,8 +68,10 @@ install2.r --error --skipmissing --skipinstalled -n -1 \
     simStateSpace
 
 # vscode project dependencies
-install2.r --error --skipmissing --skipinstalled -n -1 \
+install2.r --error --skipinstalled -n -1 \
   languageserver \
-  httpgd         \
   styler         \
   lintr
+
+# not in cran
+#  httpgd         \
