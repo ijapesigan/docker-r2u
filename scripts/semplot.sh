@@ -3,7 +3,7 @@
 set -e
 
 # semPlot
-install2.r --error --skipinstalled -n -1 \
+install2.r --error --skipmissing --skipinstalled -n -1 \
     semPlot
 
 R -e "library(semPlot)"

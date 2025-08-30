@@ -3,11 +3,11 @@
 set -e
 
 # rjags dependencies
-install2.r --error --skipinstalled -n -1 \
+install2.r --error --skipmissing --skipinstalled -n -1 \
     coda
 
 # rjags
-install2.r --error --skipinstalled -n -1 \
+install2.r --error --skipmissing --skipinstalled -n -1 \
     rjags
 
 R -e "library(rjags)"

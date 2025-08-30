@@ -3,7 +3,7 @@
 set -e
 
 # semlbci dependencies
-install2.r --error --skipinstalled -n -1 \
+install2.r --error --skipmissing --skipinstalled -n -1 \
   lavaan  \
   nloptr  \
   MASS    \
@@ -13,7 +13,7 @@ install2.r --error --skipinstalled -n -1 \
   pbapply
 
 # semlbci
-install2.r --error --skipinstalled -n -1 \
+install2.r --error --skipmissing --skipinstalled -n -1 \
     semlbci
 
 R -e "library(semlbci)"

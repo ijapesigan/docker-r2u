@@ -7,13 +7,13 @@ set -e
 set -e
 
 # symSEM dependencies
-install2.r --error --skipinstalled -n -1 \
+install2.r --error --skipmissing --skipinstalled -n -1 \
     caracas
 
 # metaSEM and OpenMx are installed using metasem.sh and openmx.sh
 
 # symSEM
-install2.r --error --skipinstalled -n -1 \
+install2.r --error --skipmissing --skipinstalled -n -1 \
     symSEM
 
 
