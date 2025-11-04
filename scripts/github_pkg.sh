@@ -7,6 +7,7 @@ R -e "remotes::install_github(        \
         'rstudio/tinytex',            \
         'r-lib/cli',                  \
         'r-lib/devtools',             \
+        'r-lib/roxygen2',             \
         'ijapesigan/rProject',        \
         'jeksterslab/semmcci',        \
         'jeksterslab/betaDelta',      \
@@ -16,7 +17,7 @@ R -e "remotes::install_github(        \
         'jeksterslab/simStateSpace',  \
         'jeksterslab/bootStateSpace', \
         'jeksterslab/cTMed',          \
-        'jeksterslab/fitDTVARMx',     \
+        'jeksterslab/fitDTVARMxID',   \
         'jeksterslab/metaVAR'         \
     )                                 \
 )"
