@@ -10,6 +10,7 @@ bash tinytex.sh
 bash custom.sh
 bash lavaan.sh
 bash openmx_sys.sh
+bash openmx_deps.sh
 bash openmx.sh
 bash metasem.sh
 bash symsem.sh
