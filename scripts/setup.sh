@@ -30,7 +30,7 @@ bash semmcci.sh
 bash longmi.sh
 bash mpdemo.sh
 bash mplusautomation.sh
-# bash semplot.sh
+bash semplot.sh
 bash dynr_sys.sh
 bash dynr.sh
 bash ctsem.sh
@@ -38,9 +38,8 @@ bash simstatespace.sh
 bash bootstatespace.sh
 bash dynutils.sh
 bash ctmed.sh
-bash fitdtvarmx.sh
-# bash fitctvarmx.sh
-bash metavar.sh
+bash fitvarmxid.sh
+bash metadyn.sh
 bash mlvar.sh
 bash rstan.sh
 bash rjags_sys.sh
@@ -48,4 +47,5 @@ bash rjags.sh
 bash r2jags.sh
 bash brms.sh
 bash github_pkg.sh
+bash torch.sh
 bash post.sh
