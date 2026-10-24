@@ -13,39 +13,24 @@ else
     echo "GITHUB_PAT NOT set"
 fi
 
-bash ubuntu_sys_pkg.sh
-bash ubuntu_cran_pkg.sh
+# system: apt.txt, tools, rProject's system libraries
+bash install-apt.sh
+bash tools.sh
 bash rproject_sys.sh
+
+# R: rProject, TinyTeX, CRAN (cran.txt), source builds, GitHub (github.txt)
 bash rproject.sh
 bash tinytex.sh
-bash custom.sh
-bash lavaan.sh
-bash openmx_sys.sh
-bash openmx_deps.sh
-bash openmx.sh
-bash metasem.sh
-bash symsem.sh
-bash semlbci.sh
-bash semmcci.sh
-bash longmi.sh
-bash mpdemo.sh
-bash mplusautomation.sh
-bash semplot.sh
-bash dynr_sys.sh
+bash install-cran.sh
 bash dynr.sh
-bash ctsem.sh
-bash simstatespace.sh
-bash bootstatespace.sh
-bash dynutils.sh
-bash ctmed.sh
-bash fitvarmxid.sh
-bash metadyn.sh
-bash mlvar.sh
-bash rstan.sh
-bash rjags_sys.sh
-bash rjags.sh
-bash r2jags.sh
-bash brms.sh
-bash github_pkg.sh
 bash torch.sh
+bash install-github.sh
+
+# Mplus demo, container metadata
+bash mpdemo.sh
+bash custom.sh
+
+# every package in cran.txt and github.txt loads
+bash check.sh
+
 bash post.sh

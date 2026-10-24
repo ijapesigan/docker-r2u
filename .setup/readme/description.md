@@ -1,0 +1,1 @@
+An R image for projects based on [r2u](https://github.com/eddelbuettel/r2u/): CRAN packages as Ubuntu binaries, with rProject, TinyTeX, Quarto, structural equation modeling, dynamic and state-space models, Bayesian modeling (Stan, JAGS, brms), torch, and the Mplus demo (amd64).

@@ -1,0 +1,24 @@
+# GitHub packages for the r2u image: owner/repo[@ref], one per line.
+# Their dependencies come from each DESCRIPTION (CRAN ones as binaries).
+# install-github.sh installs them after the CRAN packages (development
+# versions replace the CRAN ones); check.sh loads each one.
+
+nx10/httpgd
+rstudio/tinytex
+r-lib/cli
+r-lib/devtools
+r-lib/roxygen2
+ijapesigan/rProject
+ijapesigan/longMI
+jeksterslab/semmcci
+jeksterslab/betaDelta
+jeksterslab/betaSandwich
+jeksterslab/betaNB
+jeksterslab/betaMC
+jeksterslab/simStateSpace
+jeksterslab/bootStateSpace
+jeksterslab/cTMed
+jeksterslab/dynUtils
+jeksterslab/dynTools
+jeksterslab/fitVARMxID
+jeksterslab/metaDyn

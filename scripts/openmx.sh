@@ -2,54 +2,32 @@
 
 set -e
 
-# OpenMx dependencies
-install2.r --error --skipinstalled -n -1 \
-    BH            \
-    covr          \
-    digest        \
-    ggplot2       \
-    knitr         \
-    lifecycle     \
-    lme4          \
-    markdown      \
-    MASS          \
-    Matrix        \
-    mvtnorm       \
-    numDeriv      \
-    Rcpp          \
-    RcppArmadillo \
-    RcppEigen     \
-    RcppGSL       \
-    RcppTOML      \
-    RcppParallel  \
-    reshape2      \
-    rmarkdown     \
-    roxygen2      \
-    rpf           \
-    snowfall      \
-    StanHeaders   \
-    testthat
+# CRAN packages wanted (never their dependencies)
+pkgs=(OpenMx ifaTools)
 
-# OpenMx
-install2.r --error --skipinstalled -n -1 \
-    OpenMx
+function apt_install() {
+    if ! dpkg -s "$@" >/dev/null 2>&1; then
+        if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
+            apt-get update
+        fi
+        apt-get install -y --no-install-recommends "$@"
+    fi
+}
 
-# R -e "                                                 \
-#   install.packages(                                    \
-#     'OpenMx',                                          \
-#     contriburl = contrib.url(                          \
-#       repos = 'https://openmx.ssri.psu.edu/software/', \
-#       type = 'source'                                  \
-#     ),                                                 \
-#     dependencies = NA,                                 \
-#     verbose = TRUE                                     \
-#   );                                                   \
-#   demo('BivariateCorrelation', package = 'OpenMx')     \
-# "
+# system dependencies of the packages and of their R dependencies: pak
+# looks them up (the r-hub system requirements database), apt installs
+# them; skipped without apt
+install2.r --error --skipinstalled pak
+if command -v apt-get > /dev/null 2>&1; then
+    sys="$(Rscript -e "writeLines(as.character(unique(unlist(pak::pkg_sysreqs(commandArgs(TRUE))\$packages\$system_packages))))" "${pkgs[@]}")"
+    if [ -n "${sys}" ]; then
+        mapfile -t sys_pkgs <<< "${sys}"
+        apt_install "${sys_pkgs[@]}"
+    fi
+fi
 
-# Item factor analysis in OpenMx
-install2.r --error --skipinstalled -n -1 \
-    ifaTools
+# the packages and their R dependencies
+install2.r --error --skipinstalled -n -1 "${pkgs[@]}"
 
 R -e "library(OpenMx)"
 

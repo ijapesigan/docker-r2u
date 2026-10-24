@@ -1,0 +1,40 @@
+# System packages for the r2u image: one per line. install-apt.sh
+# installs them. R packages' system libraries come with the r2u binaries;
+# these are tools, and libraries for the source builds (dynr, rjags).
+
+# tools
+bat
+clang-format
+curl
+git
+git-lfs
+golang-go
+less
+nnn
+openssh-server
+parallel
+rsync
+tmux
+vim
+wget
+
+# dynr (built from source)
+cmake
+libgsl-dev
+libcurl4-openssl-dev
+libssl-dev
+libxml2-dev
+libfontconfig1-dev
+libfreetype6-dev
+libfribidi-dev
+libharfbuzz-dev
+libjpeg-dev
+libpng-dev
+libtiff5-dev
+libglpk-dev
+tcl8.6-dev
+tk8.6-dev
+
+# rjags
+pkg-config
+jags

@@ -1,0 +1,88 @@
+# CRAN packages for the r2u image: the packages wanted, one per line,
+# grouped by topic. List no dependencies: install-cran.sh installs these
+# as binaries (r2u, bspm), each with its current R and system
+# dependencies, so a dependency added or dropped upstream needs no edit
+# here. check.sh loads each package.
+
+# tidyverse and data
+tidyverse
+vroom
+gert
+DT
+arrow
+dbplyr
+DBI
+dtplyr
+duckdb
+nycflights13
+Lahman
+RMariaDB
+RPostgres
+RSQLite
+fst
+tidymodels
+
+# development
+BiocManager
+covr
+devtools
+distro
+ggplot2
+knitr
+languageserver
+lintr
+magick
+markdown
+microbenchmark
+pdftools
+pkgdown
+printr
+qpdf
+quarto
+ragg
+RefManageR
+remotes
+rhub
+rmarkdown
+rprojroot
+styler
+testthat
+
+# SEM
+lavaan
+OpenMx
+ifaTools
+metaSEM
+symSEM
+semlbci
+semmcci
+semPlot
+MplusAutomation
+betaDelta
+betaSandwich
+betaNB
+betaMC
+
+# dynamic models
+ctsem
+simStateSpace
+bootStateSpace
+cTMed
+fitVARMxID
+metaDyn
+mlVAR
+vars
+qgraph
+igraph
+fclust
+
+# Bayesian
+rstan
+rjags
+R2jags
+brms
+
+# torch (the backend: torch.sh)
+torch
+luz
+safetensors
