@@ -3,20 +3,20 @@
 docker template writes. Edit .setup/readme/description.md, scripts/cran.txt,
 scripts/github.txt, or .setup/scripts/project.R instead. -->
 
-# ijapesigan/r2u
+# NA/NA
 
 <!-- badges: start -->
 
 [![Docker Build and Push r2u \[multi\]
-(Daily)](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-build-push-daily-multi-r2u.yml/badge.svg)](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-build-push-daily-multi-r2u.yml)
+(Daily)](https://github.com/NA/actions/workflows/docker-build-push-daily-multi-r2u.yml/badge.svg)](https://github.com/NA/actions/workflows/docker-build-push-daily-multi-r2u.yml)
 [![Docker Build and Push
-\[multi\]](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-build-push-multi.yml/badge.svg)](https://github.com/ijapesigan/docker-r2u/actions/workflows/docker-build-push-multi.yml)
+\[multi\]](https://github.com/NA/actions/workflows/docker-build-push-multi.yml/badge.svg)](https://github.com/NA/actions/workflows/docker-build-push-multi.yml)
 [![Make
-Project](https://github.com/ijapesigan/docker-r2u/actions/workflows/make.yml/badge.svg)](https://github.com/ijapesigan/docker-r2u/actions/workflows/make.yml)
+Project](https://github.com/NA/actions/workflows/make.yml/badge.svg)](https://github.com/NA/actions/workflows/make.yml)
 [![Non-ASCII
-Check](https://github.com/ijapesigan/docker-r2u/actions/workflows/non-ascii-check.yml/badge.svg)](https://github.com/ijapesigan/docker-r2u/actions/workflows/non-ascii-check.yml)
+Check](https://github.com/NA/actions/workflows/non-ascii-check.yml/badge.svg)](https://github.com/NA/actions/workflows/non-ascii-check.yml)
 [![Shell
-Check](https://github.com/ijapesigan/docker-r2u/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/ijapesigan/docker-r2u/actions/workflows/shellcheck.yml)
+Check](https://github.com/NA/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/NA/actions/workflows/shellcheck.yml)
 <!-- badges: end -->
 
 ## Description
@@ -28,22 +28,22 @@ dynamic and state-space models, Bayesian modeling (Stan, JAGS, brms),
 torch, and the Mplus demo (amd64).
 
 Based on `rocker/r2u:24.04`; built for linux/amd64 and linux/arm64.
-Source: <https://github.com/ijapesigan/docker-r2u>.
+Source: <https://github.com/NA>.
 
 ## Use
 
 Docker (Docker Hub or the GitHub Container Registry):
 
 ``` bash
-docker run -it ijapesigan/r2u
-docker run -it ghcr.io/ijapesigan/r2u
+docker run -it NA/NA
+docker run -it ghcr.io/NA/NA
 ```
 
 Apptainer:
 
 ``` bash
-apptainer pull r2u.sif docker://ijapesigan/r2u
-apptainer shell r2u.sif
+apptainer pull NA.sif docker://NA/NA
+apptainer shell NA.sif
 ```
 
 ## Contents
@@ -98,4 +98,4 @@ R packages from GitHub (`scripts/github.txt`), installed after CRAN:
 - Shell Check (`shellcheck.yml`): after Make Project
 
 The images are pushed to Docker Hub and the GitHub Container Registry as
-`ijapesigan/r2u:latest`.
+`NA/NA:latest`.
