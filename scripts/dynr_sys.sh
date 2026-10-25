@@ -23,7 +23,7 @@ apt_install \
 # freetype2
 apt_install            \
     libfontconfig1-dev \
-    libfreetype6-dev   \
+    libfreetype-dev   \
     libjpeg-dev        \
     libpng-dev         \
     libtiff5-dev
